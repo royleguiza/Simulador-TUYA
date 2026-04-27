@@ -1,0 +1,6 @@
+{
+  "name": "Simulador de Desendeudamiento - Tarjeta Tuya",
+  "description": "Calculadora financiera para proyectar pagos de tarjeta de crédito Tuya con simulaciones de pago total vs pago mínimo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
