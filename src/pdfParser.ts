@@ -57,19 +57,13 @@ export async function parseTuyaPDF(file: File): Promise<SummaryData> {
 
   return {
     titular,
-    saldoTotal: saldoTotal || 879078.96,
-    pagoMinimo: pagoMinimo || 500379.00,
+    saldoTotal: saldoTotal,
+    pagoMinimo: pagoMinimo,
     vencimiento,
     tem: 5.45,
     tna: 66.36,
     comisionMensual: 7120.00,
     iva: 21,
-    cuotasVencer: filteredCuotas.length > 0 ? filteredCuotas : [
-      { month: "Junio", amount: 254903.10 },
-      { month: "Julio", amount: 115583.12 },
-      { month: "Agosto", amount: 94045.69 },
-      { month: "Septiembre", amount: 60973.58 },
-      { month: "Octubre", amount: 31968.43 },
-    ]
+    cuotasVencer: cuotasVencer
   };
 }
